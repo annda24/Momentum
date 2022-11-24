@@ -1,0 +1,17 @@
+@media screen and (orientation:landscape) {
+    #footer{display:none;}
+}
+@media screen and (orientation:portrait) {
+    #footer{
+        display:block;z-index:3;
+        position:absolute;bottom:0;left:0;
+        width:100%;height:5rem;
+    }
+    #footer ul {width:100%;height:100%;display:flex;justify-content:space-between;}
+    #footer ul li {width:25%;height:100%;display:flex;flex-direction:column;justify-content:center;cursor:pointer;}
+    #footer ul li i {font-size:2rem;opacity:0.7;transition:all ease 400ms;transform:translateY(0.5rem);}
+    #footer ul li span {font-size:1rem;opacity:0;transform:translateY(-1rem);transition:all ease 400ms;}
+    #footer ul li:hover i, #footer ul li.now i,
+    #footer ul li:hover span, #footer ul li.now span {opacity:1;transform:translateY(0);} 
+}
+    

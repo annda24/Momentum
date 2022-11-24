@@ -1,0 +1,26 @@
+/* common.css */
+.hidden {display:none !important;}
+.on {opacity:1 !important;z-index:1 !important;}
+
+/* transition - hoverOpacity */
+.hoverOpacity {cursor:pointer;opacity:0.5;transition:opacity 400ms ease;}
+    .hoverOpacity:hover{opacity:1;}
+
+
+/* transition - hoverTrans */
+.hoverTrans {
+    transition:all 300ms ease;
+    border-radius:0.2rem;padding:0.5rem;box-sizing:border-box;
+}
+.hoverTrans > span {display:block;transition:all 400ms ease;}
+    .hoverTrans > span:first-of-type {transform:translateY(50%);}
+    .hoverTrans > span:last-of-type {opacity:0;transform:translateY(-50%);}
+        .hoverTrans:hover > span:first-of-type {transform:translateY(0);}
+        .hoverTrans:hover > span:last-of-type {opacity:1;transform:translateY(0);}
+
+.arrowBox {background-color:#fff;border-radius:0.5rem;color:#333;}        
+    .arrowBox::before {
+        content:'';display:block;clear:both;
+        background:#fff;border-top-left-radius:20%;
+        width:1rem;height:1rem;transform:rotate(45deg);
+    }

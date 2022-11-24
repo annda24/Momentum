@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App | Annda</title>
+
+    <script src="https://kit.fontawesome.com/39dfc21e53.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/import.css" />
+</head>
+<body>
+    <!-- Momentum Clone Coding Project https://momentumdash.com/ -->
+
+    <div id="Container" class="login">
+        <!-- background -->
+        <div id="background">
+            <img alt="today background image"/>
+            <div class="hoverTrans">
+                <h3 class="hidden">background image explain</h3>
+                <span>background image title</span>
+                <span>background image source</span>
+            </div>
+        </div>
+
+        <!-- login -->
+        <h1 id="hello">Hello!</h1>
+        <form id="login-form">
+            <label>What's your name?</label>
+            <input 
+                required
+                maxlength="15"
+                type="text" 
+            />
+            <input type="submit" value="log in" class="hidden"/>
+            <i class="fa-regular fa-paper-plane" alt="Log in"></i>
+        </form>
+
+        <!-- greeting -->
+        <h2 id="greeting"></h2>
+
+        <!-- clock -->
+        <h2 id="clock"><span>hours</span>:<span>minutes</span>:<span>seconds</span></h2>
+
+        <!-- quote -->
+        <div id="quote" class="hoverTrans">
+            <h3 class="hidden">today quote</h3>
+            <span>quote sentence</span>
+            <span>quote author</span>
+        </div>
+
+        <!-- Todo -->
+        <div id="todo">
+            <h3>To do List</h3>
+            <form id="todo-form">
+                <label for="What is your main focus for today?"></label>
+                <input type="text" placeholder="Write a To Do and Press Enter" required/>
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+
+        <!-- search & bookmark -->
+        <div id="links">
+            <h3 id="title">Links</h3>
+            <div id="bookmark" class="arrowBox">
+                <div class="frame">
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="chrome://new-tab-page/" id="new-tab" class="local" title="Chrome Tab" target="_blank">
+                                    <i class="fa-brands fa-chrome"></i>
+                                    <span>Chrome Tab</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chrome://apps" id="app-return" class="local" title="Apps" target="_blank">
+                                    <i class="fa-solid fa-box-open"></i>
+                                    <span>Apps</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul></ul>
+                        <span id="linkAdd" class="hoverOpacity">New Link</span>
+                    </div>
+                    <button class="prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required/>
+                        <label for="link">Link</label>
+                        <input type="url" id="url" value="https://" placeholder="https://example.com" required/>
+                        <input type="submit" value="Create" alt="Add New Links">
+                    </form>
+                </div>
+            </div>
+            <div id="srchBox">
+                <form>
+                    <input type="text" placeholder="search for..." required/>
+                    <input type="submit" value="search" class="hidden" />
+                </form>
+                <span id="srchSite" title="검색 사이트를 선택하세요">Google</span>
+                <div id="srchWith" class="arrowBox">
+                    <h4>search with</h4>
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- weather -->
+        <div id="weather">
+            <i></i>
+            <span>Weather information of user location</span>
+            <i class="fa-solid fa-temperature-half"></i>
+            <span>temperature information of user location</span>
+            <span>user location</span>
+        </div>
+    </div>
+
+    <div id="footer">
+        <ul>
+            <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>search</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-comment"></i>
+                <span>background explain</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-quote-left"></i>
+                <span>quote</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-list-check"></i>
+                <span>to do list</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- java script -->
+    <script src="js/common.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>
