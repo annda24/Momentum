@@ -24,7 +24,7 @@ https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokd
   2. 지역 날씨/기온
   위치 정보를 사용자에게 요청하여 위도/경도를 확인한 후
   Current weather data API를 이용하여 해당 위치(위도/경도)의 날씨/기온 정보를 제공합니다.
-  # 현재 해당 기능에서 에러를 확인하여 수정중입니다.
+   (현재 해당 기능에서 에러를 확인하여 수정중입니다.)
   
   3. 검색/북마크
   사이트 이름과 링크를 저장하여 북마크 기능을 제공할 수 있습니다.
